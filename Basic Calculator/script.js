@@ -79,7 +79,7 @@ class Calculator {
     if (isNaN(integerDigits)) { // Case when there is nothing before the decimal point and user starts from the decimal
       integerDisplay = '';
     } else { // Case when there is something before the decimal part
-      integerDisplay = integerDigits.toLocaleString('en', { // converts number to to a string by using the current or specified locale Ex: 55555 to 55,555
+      integerDisplay = integerDigits.toLocaleString('en', { // converts number to a string by using the current or specified locale Ex: 55555 to 55,555
         maximumFractionDigits: 0, // There can never be any decimal places after the string "integerDisplay"
       });
     }
